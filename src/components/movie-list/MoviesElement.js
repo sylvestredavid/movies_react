@@ -26,7 +26,7 @@ class MoviesElement extends Component {
                 <div className="card">
                     <img alt="film" src={this.props.film.img} className="card-img-top" onClick={this.onChangeFilm}/>
                     <div className="card-body">
-                        <h5 className="card-title">{this.props.film.titre}</h5>
+                        <h5 className="card-title w-75">{this.props.film.titre}</h5>
                         <div className="favHeart" style={{'color': this.props.film.liked ? 'red' : 'black'}}
                              onClick={this.onToggleLike}>❤
                         </div>

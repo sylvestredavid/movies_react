@@ -49,7 +49,7 @@ export default (state, action) => {
                 ...state,
                 loading: false,
                 films: state.films.map(film => {
-                   if (film.id === action.id) {
+                   if (film._id === action.id) {
                        return {
                            ...film,
                            liked: !film.liked
@@ -58,7 +58,7 @@ export default (state, action) => {
                        return film
                    }
                 }),
-                film: state.film && state.film.id === action.id ? {...state.film, liked: !state.film.liked} : state.film
+                film: state.film && state.film._id === action.id ? {...state.film, liked: !state.film.liked} : state.film
             }
         case 'TOGGLE_LIKED_ERROR':
             return {

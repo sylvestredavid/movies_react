@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import {addhFilmAction} from "../../actions/addFilm";
+import {addFilmAction} from "../../actions/addFilm";
 
 class AjouterFilm extends Component {
 
@@ -97,7 +97,7 @@ class AjouterFilm extends Component {
 }
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-    addFilm: addhFilmAction
+    addFilm: addFilmAction
 }, dispatch)
 
 export default connect(null, mapDispatchToProps)(AjouterFilm)

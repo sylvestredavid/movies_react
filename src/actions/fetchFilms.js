@@ -5,7 +5,7 @@ export const fetchFilmsAction = () => {
     return (dispatch) => {
         console.log('fetch films dispatch')
         dispatch(getFilmsPending());
-        fetch('http://localhost:8080/movies-back/public/index.php/movie/')
+        fetch('http://localhost:8080/movies/')
             .then(res => res.json())
             .then(res => {
                 console.log(res)
