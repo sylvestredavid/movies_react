@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="678a9482-8a26-482b-a8c2-1131ab33c489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/loading/loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lottie/anim.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/addFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/addFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/fetchFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/fetchFilms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/toggleLiked.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/toggleLiked.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ajouter-film/AjouterFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ajouter-film/AjouterFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/favoris/Favoris.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/favoris/Favoris.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movie-list/MoviesElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list/MoviesElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movie-list/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list/MoviesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +112,7 @@
       <workItem from="1587385142078" duration="70000" />
       <workItem from="1587533493699" duration="2311000" />
       <workItem from="1587556554401" duration="30824000" />
-      <workItem from="1587656536423" duration="9305000" />
+      <workItem from="1587656536423" duration="9776000" />
     </task>
     <task id="LOCAL-00001" summary="mise en page formulaire">
       <created>1587584724872</created>
@@ -161,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587660083153</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="loader et refacto">
+      <created>1587672900847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587672900848</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +172,7 @@
     <MESSAGE value="mise en page formulaire" />
     <MESSAGE value="redux" />
     <MESSAGE value="ajout d'un serveur et mongodb cloud" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout d'un serveur et mongodb cloud" />
+    <MESSAGE value="loader et refacto" />
+    <option name="LAST_COMMIT_MESSAGE" value="loader et refacto" />
   </component>
 </project>

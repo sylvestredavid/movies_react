@@ -4,7 +4,7 @@ import {Link, NavLink} from "react-router-dom";
 export default function Header () {
     return (
         <header className="navbar navbar-expand-lg navbar-light bg-light">
-            <Link className="navbar-brand" to="/">AlloMovie</Link>
+            <Link className="navbar-brand" to="/">AlloMovies</Link>
             <button className="navbar-toggler">
                 <span className="navbar-toggler-icon"></span>
             </button>

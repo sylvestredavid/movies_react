@@ -73,7 +73,7 @@ class AjouterFilm extends Component {
                     <label htmlFor="titre">Titre</label>
                     <input type="text" id="titre" value={this.state.film.titre} onChange={this.changeTitre}
                            className="form-control"/>
-                    <label htmlFor="image" className="mt-2">Image</label>
+                    <label htmlFor="image" className="mt-2">Image (url)</label>
                     <input type="text" id="image" value={this.state.film.img} onChange={this.changeImg}
                            className="form-control"/>
                     <div className="form-check mt-2">
@@ -88,7 +88,7 @@ class AjouterFilm extends Component {
                         <img src={this.state.film.img.length > 0 ? this.state.film.img : 'https://www.karriere-jet.de/skin/images/hints/no-preview-available.jpg'} alt='' className="card-img-top"/>
                         <div className="card-body">
                             <h5 className="card-title">{this.state.film.titre.length > 0 ? this.state.film.titre : 'Titre'}</h5>
-                            <div className="favHeart" style={{'color': this.state.film.liked ? 'red': 'black'}} onClick={this.toggleLike}>❤</div>
+                            <div className="favHeart" style={{'color': this.state.film.liked ? 'red': 'black'}}>❤</div>
                         </div>
                     </div>
                 </div>
