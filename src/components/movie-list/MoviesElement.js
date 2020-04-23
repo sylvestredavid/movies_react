@@ -1,38 +1,47 @@
 import React, {Component} from "react";
 import PropTypes from "prop-types";
+import {changeFilm} from "../../actions";
+import {connect} from "react-redux";
+import {bindActionCreators} from "redux";
+import {toggleLikedAction} from "../../actions/toggleLiked";
 
-export default class MoviesElement extends Component{
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            film: this.props.film
-        }
-    }
+class MoviesElement extends Component {
 
     static propTypes = {
         film: PropTypes.object.isRequired,
-        changeFilm: PropTypes.func,
-        toggleLike: PropTypes.func.isRequired,
+    };
+
+    onChangeFilm = () => {
+        this.props.changeFilm(this.props.film)
     }
 
-    changeFilm = () => {
-        if(this.props.changeFilm) this.props.changeFilm(this.props.film)
+    onToggleLike = () => {
+        const { toggleLiked } = this.props
+        toggleLiked(this.props.film)
     }
-    toggleLike = () => {
-        this.props.toggleLike(this.props.film)
-    }
+
     render() {
         return (
             <div className="w-25 p-2">
                 <div className="card">
-                    <img alt="film" src={this.props.film.img} className="card-img-top" onClick={this.changeFilm} />
+                    <img alt="film" src={this.props.film.img} className="card-img-top" onClick={this.onChangeFilm}/>
                     <div className="card-body">
                         <h5 className="card-title">{this.props.film.titre}</h5>
-                        <div className="favHeart" style={{'color': this.props.film.liked ? 'red': 'black'}} onClick={this.toggleLike}>❤</div>
+                        <div className="favHeart" style={{'color': this.props.film.liked ? 'red' : 'black'}}
+                             onClick={this.onToggleLike}>❤
+                        </div>
                     </div>
                 </div>
             </div>
         )
     }
 }
+
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+        toggleLiked: toggleLikedAction,
+        changeFilm: changeFilm
+    }, dispatch)
+}
+
+export default connect(null, mapDispatchToProps)(MoviesElement)

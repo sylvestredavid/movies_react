@@ -1,6 +1,9 @@
 import React, {Component} from "react";
+import {connect} from "react-redux";
+import {bindActionCreators} from "redux";
+import {addhFilmAction} from "../../actions/addFilm";
 
-export default class AjouterFilm extends Component {
+class AjouterFilm extends Component {
 
     constructor(props) {
         super(props);
@@ -16,25 +19,19 @@ export default class AjouterFilm extends Component {
 
     submitForm = (e) => {
         e.preventDefault();
-        fetch('http://localhost:8080/movies-back/public/index.php/movie/add', {
-            method: 'POST',
-            body: JSON.stringify(this.state.film)
+        const { addFilm } = this.props
+        addFilm(this.state.film);
+        this.setState({
+            film: {
+                titre: '',
+                img: '',
+                liked: false
+            },
+            message: 'Le film a bien été ajouté.'
         })
-            .then(res => res.json())
-            .then((data) => {
-                this.setState({
-                    film: {
-                        titre: '',
-                        img: '',
-                        liked: false
-                    },
-                    message: 'Le film a bien été ajouté.'
-                })
-                setTimeout(() => {
-                    this.props.history.push('/')
-                }, 500)
-            })
-            .catch(console.log('error'))
+        // setTimeout(() => {
+        //     this.props.history.push('/')
+        // }, 500)
     }
 
     changeTitre = (e) => {
@@ -58,7 +55,6 @@ export default class AjouterFilm extends Component {
     }
 
     changeLiked = (e) => {
-        console.log(e.target.checked)
         this.setState({
             film: {
                 titre: this.state.film.titre,
@@ -99,3 +95,9 @@ export default class AjouterFilm extends Component {
     }
 
 }
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+    addFilm: addhFilmAction
+}, dispatch)
+
+export default connect(null, mapDispatchToProps)(AjouterFilm)

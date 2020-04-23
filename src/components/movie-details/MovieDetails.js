@@ -1,29 +1,46 @@
 import React, {Component} from "react";
-import PropTypes from "prop-types";
+import {connect} from "react-redux";
+import {bindActionCreators} from "redux";
+import {toggleLikedAction} from "../../actions/toggleLiked";
 
-export default class MovieDetails extends Component{
+class MovieDetails extends Component {
 
-    static propTypes = {
-        film: PropTypes.object,
-        toggleLike: PropTypes.func.isRequired,
+    onToggleLike = () => {
+        const {toggleLiked} = this.props
+        toggleLiked(this.props.film)
     }
 
-    toggleLike = () => {
-        this.props.toggleLike(this.props.film)
-    }
     render() {
         return (
-            <div className="w-25 border p-4">
+            <div className="w-25 border pr-4 pl-4 pb-4">
                 {this.props.film ?
-                (<div className="card">
-                    <img alt="film" src={this.props.film.img} className="card-img-top" />
-                    <div className="card-body">
-                        <h5 className="card-title">{this.props.film.titre}</h5>
-                        <div className="favHeart" style={{'color': this.props.film.liked ? 'red': 'black'}} onClick={this.toggleLike}>❤</div>
-                    </div>
-                </div>) : <p>Choisissez un film</p>
-                    }
+                    (<div className="position-sticky sticky-top pt-4">
+                        <div className="card">
+                            <img alt="film" src={this.props.film.img} className="card-img-top"/>
+                            <div className="card-body">
+                                <h5 className="card-title">{this.props.film.titre}</h5>
+                                <div className="favHeart" style={{'color': this.props.film.liked ? 'red' : 'black'}}
+                                     onClick={this.onToggleLike}>❤
+                                </div>
+                            </div>
+                        </div>
+                    </div>) : <p className="mt-4">Choisissez un film</p>
+                }
             </div>
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        film: state.film
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+        toggleLiked: toggleLikedAction
+    }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MovieDetails)
