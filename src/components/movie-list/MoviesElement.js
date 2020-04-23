@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import PropTypes from "prop-types";
-import {changeFilm} from "../../actions";
+import {changeFilm} from "../../redux/actions";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import {toggleLikedAction} from "../../actions/toggleLiked";
+import {toggleLikedAction} from "../../redux/actions/toggleLiked";
 
 class MoviesElement extends Component {
 

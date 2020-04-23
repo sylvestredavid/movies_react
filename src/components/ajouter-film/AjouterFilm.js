@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import {addFilmAction} from "../../actions/addFilm";
+import {addFilmAction} from "../../redux/actions/addFilm";
+import {Loading} from "../index";
 
 class AjouterFilm extends Component {
 
@@ -67,6 +68,7 @@ class AjouterFilm extends Component {
     render() {
         return (
             <div className="d-flex flex-row border flex-fill pt-4 p-2 justify-content-around">
+                {this.props.loading && <Loading/>}
                 <form onSubmit={this.submitForm} className="w-25 form-group">
                     <label htmlFor="titre">Titre</label>
                     <input type="text" id="titre" value={this.state.film.titre} onChange={this.changeTitre}
@@ -96,8 +98,15 @@ class AjouterFilm extends Component {
 
 }
 
+const mapStateToProps = (state) => {
+    console.log(state)
+    return {
+        loading: state.loading
+    }
+}
+
 const mapDispatchToProps = dispatch => bindActionCreators({
     addFilm: addFilmAction
 }, dispatch)
 
-export default connect(null, mapDispatchToProps)(AjouterFilm)
+export default connect(mapStateToProps, mapDispatchToProps)(AjouterFilm)

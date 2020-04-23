@@ -25,7 +25,7 @@ export default (state, action) => {
         case 'ADD_FILM_SUCCESS':
             return {
                 ...state,
-                loading: true,
+                loading: false,
                 films: [...state.films, action.film]
             }
         case 'ADD_FILMS_ERROR':
@@ -39,15 +39,9 @@ export default (state, action) => {
                 ...state,
                 film: action.film
             }
-        case 'TOGGLE_LIKED_PENDING':
-            return {
-                ...state,
-                loading: true
-            }
         case 'TOGGLE_LIKED_SUCCESS':
             return {
                 ...state,
-                loading: false,
                 films: state.films.map(film => {
                    if (film._id === action.id) {
                        return {
@@ -63,7 +57,6 @@ export default (state, action) => {
         case 'TOGGLE_LIKED_ERROR':
             return {
                 ...state,
-                loading: false,
                 error: action.error
             }
         default:

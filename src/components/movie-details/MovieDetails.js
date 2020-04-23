@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import {toggleLikedAction} from "../../actions/toggleLiked";
+import {toggleLikedAction} from "../../redux/actions/toggleLiked";
 
 class MovieDetails extends Component {
 

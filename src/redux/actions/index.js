@@ -45,12 +45,6 @@ export const changeFilm = (film) => {
     }
 };
 
-export const toggleLikedPending = () => {
-    return {
-        type: 'TOGGLE_LIKED_PENDING',
-    }
-};
-
 export const toggleLikedSuccess = (id) => {
     return {
         type: 'TOGGLE_LIKED_SUCCESS',
