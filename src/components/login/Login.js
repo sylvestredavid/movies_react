@@ -31,6 +31,7 @@ class Login extends Component {
                     <input type="password" id="image" ref={input => this.password = input}
                            className="form-control"/>
                     <input type="submit" value="Envoyer" className="btn btn-primary mt-2"/>
+                    <small>admin et adminpass</small>
                 </form>
         )
     }

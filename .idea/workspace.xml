@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="678a9482-8a26-482b-a8c2-1131ab33c489" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +112,8 @@
       <workItem from="1587556554401" duration="30824000" />
       <workItem from="1587656536423" duration="16962000" />
       <workItem from="1587737547975" duration="10345000" />
-      <workItem from="1587761315699" duration="4223000" />
+      <workItem from="1587761315699" duration="4407000" />
+      <workItem from="1587765949272" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="mise en page formulaire">
       <created>1587584724872</created>
@@ -169,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587765510953</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="admin et refacto">
+      <created>1587765553754</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587765553754</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
