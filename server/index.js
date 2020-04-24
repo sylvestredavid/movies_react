@@ -28,6 +28,6 @@ moviesRoute(app)
 app.listen(PORT, () => {
     console.log(`Server listen port ${PORT}`);
 
-    // exec('npm run start');
+    exec('npm run start');
 })
 
