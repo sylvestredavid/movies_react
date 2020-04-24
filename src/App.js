@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import {AjouterFilm, Favoris, Header, Home} from "./components";
+import {Admin, AjouterFilm, Favoris, Header, Home, Login} from "./components";
 import {Route, Switch} from "react-router-dom";
 import {bindActionCreators} from "redux";
-import {fetchFilmsAction} from "./redux/actions/fetchFilms";
+import {fetchFilmsAction} from "./redux/actions/fetchFilmsAction";
 import {connect} from "react-redux";
 
 class App extends Component {
@@ -20,6 +20,8 @@ class App extends Component {
                     <Route path="/" component={Home} exact/>
                     <Route path="/favoris" component={Favoris}/>
                     <Route path="/create" component={AjouterFilm}/>
+                    <Route path="/login" component={Login}/>
+                    <Route path="/admin" component={Admin}/>
                 </Switch>
             </div>
         )

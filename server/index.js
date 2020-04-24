@@ -3,6 +3,8 @@ import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
 import cors from "cors";
 import {moviesRoute} from "./routes/moviesRoute";
+import * as jsonWebToken from "jsonwebtoken";
+import {userRoutes} from "./routes/userRoutes";
 const { exec } = require('child_process');
 
 const app = express();
@@ -23,11 +25,25 @@ app.use(cors({
     origin: '*'
 }));
 
+app.use((req, res, next) => {
+    if(req.headers && req.headers.authorization && req.headers.authorization.split(' ')[0]==='JWT') {
+        jsonWebToken.verify(req.headers.authorization.split(' ')[1], 'RESTFULAPIs', (err, decode) => {
+            if (err) req.user = undefined
+            req.user = decode
+            next()
+        })
+    } else {
+        req.user = undefined
+        next()
+    }
+})
+
 moviesRoute(app)
+userRoutes(app)
 
 app.listen(PORT, () => {
     console.log(`Server listen port ${PORT}`);
 
-    exec('npm run start');
+    // exec('npm run start');
 })
 

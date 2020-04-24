@@ -6,7 +6,8 @@ const data = {
     films: [],
     film: null,
     loading: false,
-    error: null
+    error: null,
+    user: null
 };
 
 export default function configureStore(initialState = data) {

@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="678a9482-8a26-482b-a8c2-1131ab33c489" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/controller/userController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/userModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/userRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admin/Admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admin/AdminElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/connectAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/deleteFilmAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controller/moviesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controller/moviesController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/moviesRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/moviesRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-list/MoviesElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list/MoviesElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/fetchFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/fetchFilmsAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/toggleLiked.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/toggleLikedAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux/actions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -34,19 +61,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\programmes\github\movies_react\src\redux\actions" />
+      <recent name="D:\programmes\github\movies_react\src\components" />
+      <recent name="D:\programmes\github\movies_react\server\routes" />
+      <recent name="D:\programmes\github\movies_react\server\controller" />
+      <recent name="D:\programmes\github\movies_react\server\models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\programmes\github\movies_react\src\redux" />
       <recent name="D:\programmes\github\movies_react\src\lottie" />
       <recent name="D:\programmes\github\movies_react\src" />
       <recent name="D:\programmes\github\movies_react\public" />
       <recent name="D:\programmes\github\movies_react\src\actions" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\programmes\github\movies_react\server" />
-      <recent name="D:\programmes\github\movies_react\src\actions" />
-      <recent name="D:\programmes\coursReact\movies\src\components" />
-      <recent name="D:\programmes\coursReact\movies\src" />
-      <recent name="D:\programmes\coursReact\movies\src\components\movie-list" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,7 +136,9 @@
       <workItem from="1587385142078" duration="70000" />
       <workItem from="1587533493699" duration="2311000" />
       <workItem from="1587556554401" duration="30824000" />
-      <workItem from="1587656536423" duration="10455000" />
+      <workItem from="1587656536423" duration="16962000" />
+      <workItem from="1587737547975" duration="10345000" />
+      <workItem from="1587761315699" duration="4122000" />
     </task>
     <task id="LOCAL-00001" summary="mise en page formulaire">
       <created>1587584724872</created>
@@ -153,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587673408581</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="loader et refacto">
+      <created>1587686878038</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587686878038</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

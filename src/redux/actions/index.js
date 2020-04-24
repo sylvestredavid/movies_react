@@ -58,3 +58,37 @@ export const toggleLikedError = (error) => {
         error
     }
 };
+
+export const connectPending = () => {
+    return {
+        type: 'CONNECT_PENDING'
+    }
+};
+
+export const connectSuccess = (user) => {
+    return {
+        type: 'CONNECT_SUCCESS',
+        user
+    }
+};
+
+export const connectError = (error) => {
+    return {
+        type: 'CONNECT_ERROR',
+        error
+    }
+};
+
+export const deleteFilmSuccess = (index) => {
+    return {
+        type: 'DELETE_FILM_SUCCESS',
+        index
+    }
+};
+
+export const deleteFilmError = (error) => {
+    return {
+        type: 'DELETE_FILM_ERROR',
+        error
+    }
+};

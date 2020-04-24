@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import {toggleLikedAction} from "../../redux/actions/toggleLiked";
+import {toggleLikedAction} from "../../redux/actions/toggleLikedAction";
 
 class MovieDetails extends Component {
 
@@ -19,8 +19,10 @@ class MovieDetails extends Component {
                             <img alt="film" src={this.props.film.img} className="card-img-top"/>
                             <div className="card-body">
                                 <h5 className="card-title">{this.props.film.titre}</h5>
-                                <div className="favHeart" style={{'color': this.props.film.liked ? 'red' : 'black'}}
+                                <div className="favHeart">
+                                    <span style={{'color': this.props.film.liked ? 'red' : 'black'}}
                                      onClick={this.onToggleLike}>❤
+                                    </span>
                                 </div>
                             </div>
                         </div>

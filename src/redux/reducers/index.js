@@ -1,3 +1,5 @@
+import sortArray from "../../utils";
+
 export default (state, action) => {
     switch (action.type) {
         case 'GET_FILMS_PENDING':
@@ -9,7 +11,7 @@ export default (state, action) => {
             return {
                 ...state,
                 loading: false,
-                films: action.films
+                films: action.films.sort(sortArray)
             }
         case 'GET_FILMS_ERROR':
             return {
@@ -26,7 +28,7 @@ export default (state, action) => {
             return {
                 ...state,
                 loading: false,
-                films: [...state.films, action.film]
+                films: [...state.films, action.film].sort(sortArray)
             }
         case 'ADD_FILMS_ERROR':
             return {
@@ -57,6 +59,38 @@ export default (state, action) => {
         case 'TOGGLE_LIKED_ERROR':
             return {
                 ...state,
+                error: action.error
+            }
+        case 'CONNECT_PENDING':
+            return {
+                ...state,
+                loading: true
+            }
+        case 'CONNECT_SUCCESS':
+            return {
+                ...state,
+                loading: false,
+                user: action.user
+            }
+        case 'CONNECT_ERROR':
+            return {
+                ...state,
+                loading: false,
+                error: action.error
+            }
+        case 'DELETE_FILM_SUCCESS':
+            return {
+                ...state,
+                loading: false,
+                films: [
+                    ...state.films.slice(0, action.index),
+                    ...state.films.slice(action.index + 1)
+                ]
+            }
+        case 'DELETE_FILM_ERROR':
+            return {
+                ...state,
+                loading: false,
                 error: action.error
             }
         default:

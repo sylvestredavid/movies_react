@@ -37,3 +37,12 @@ export const toggleLiked = (req, res) => {
         res.json(movie)
     })
 }
+
+export const deleteMovie = (req, res) => {
+    Movie.remove({ _id: req.params.id}, (err) => {
+        if (err) {
+            res.send(err)
+        }
+        res.json({message: "Effacer film avec succès"})
+    })
+}

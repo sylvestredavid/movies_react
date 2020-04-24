@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {changeFilm} from "../../redux/actions";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import {toggleLikedAction} from "../../redux/actions/toggleLiked";
+import {toggleLikedAction} from "../../redux/actions/toggleLikedAction";
 
 class MoviesElement extends Component {
 
@@ -16,20 +16,19 @@ class MoviesElement extends Component {
     }
 
     onToggleLike = () => {
-        const { toggleLiked } = this.props
+        const {toggleLiked} = this.props
         toggleLiked(this.props.film)
     }
 
     render() {
         return (
             <div className="w-25 p-2">
-                <div className="card">
+                <div className="cards">
                     <img alt="film" src={this.props.film.img} className="card-img-top" onClick={this.onChangeFilm}/>
-                    <div className="card-body">
-                        <h5 className="card-title w-75">{this.props.film.titre}</h5>
-                        <div className="favHeart" style={{'color': this.props.film.liked ? 'red' : 'black'}}
-                             onClick={this.onToggleLike}>❤
-                        </div>
+                    <div className="favHeart">
+                            <span style={{'color': this.props.film.liked ? 'red' : 'black'}}
+                                  onClick={this.onToggleLike}>❤
+                            </span>
                     </div>
                 </div>
             </div>
