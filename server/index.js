@@ -25,6 +25,7 @@ app.use(cors({
     origin: '*'
 }));
 
+//vérification de la précense d'un header authorization et si c'est le cas, on vérifie le token et on le decode en un objet
 app.use((req, res, next) => {
     if(req.headers && req.headers.authorization && req.headers.authorization.split(' ')[0]==='JWT') {
         jsonWebToken.verify(req.headers.authorization.split(' ')[1], 'RESTFULAPIs', (err, decode) => {
