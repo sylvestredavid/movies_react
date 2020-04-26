@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="678a9482-8a26-482b-a8c2-1131ab33c489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ajouter-film/AjouterFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ajouter-film/AjouterFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/initialData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/addFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/addFilmAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/connectAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/connectAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/deleteFilmAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/deleteFilmAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/fetchFilmsAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/fetchFilmsAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/toggleLikedAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/toggleLikedAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +114,7 @@
       <workItem from="1587737547975" duration="10345000" />
       <workItem from="1587761315699" duration="4407000" />
       <workItem from="1587765949272" duration="674000" />
-      <workItem from="1587805185904" duration="11131000" />
+      <workItem from="1587805185904" duration="12677000" />
     </task>
     <task id="LOCAL-00001" summary="mise en page formulaire">
       <created>1587584724872</created>
@@ -207,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587824498780</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commentaires et création de variables pour le type des actions">
+      <created>1587900973599</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587900973599</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +226,7 @@
     <MESSAGE value="loader et refacto" />
     <MESSAGE value="admin et refacto" />
     <MESSAGE value="commentaires de la partie serveur" />
-    <option name="LAST_COMMIT_MESSAGE" value="commentaires de la partie serveur" />
+    <MESSAGE value="commentaires et création de variables pour le type des actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="commentaires et création de variables pour le type des actions" />
   </component>
 </project>
