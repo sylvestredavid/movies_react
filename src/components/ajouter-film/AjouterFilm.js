@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import {addFilmAction} from "../../redux/actions/addFilm";
+import {addFilmAction} from "../../redux/actions/addFilmAction";
 import {Loading} from "../index";
 
 class AjouterFilm extends Component {

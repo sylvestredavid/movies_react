@@ -1,7 +1,9 @@
 import {connectError, connectPending, connectSuccess} from "./index";
 import * as jwt_decode from 'jwt-decode'
 
-
+//connectAction est un thunk, une fonction qui retourne une fonction. Elle va nous permettre de dispatcher plusieurs actions
+// par exemple, ici, on dispatche connectPending, on va envoyer l'user, pour la connexion via l'api avec fetch, puis si la connexion
+//a réussis, on dispatche connectSuccess en lui passant l'user (le token retourner par l'api et décodé), sinon on dispatch connectError en lui passant l'erreur
 export const connectAction = (user) => {
     return (dispatch) => {
         dispatch(connectPending());

@@ -25,7 +25,7 @@ app.use(cors({
     origin: '*'
 }));
 
-//vérification de la précense d'un header authorization et si c'est le cas, on vérifie le token et on le decode en un objet
+//vérification de la présence d'un header authorization et si c'est le cas, on vérifie le token et on le decode en un objet
 app.use((req, res, next) => {
     if(req.headers && req.headers.authorization && req.headers.authorization.split(' ')[0]==='JWT') {
         jsonWebToken.verify(req.headers.authorization.split(' ')[1], 'RESTFULAPIs', (err, decode) => {
@@ -42,6 +42,8 @@ app.use((req, res, next) => {
 moviesRoute(app)
 userRoutes(app)
 
+// on démarre le serveur, quand il sera lancé, il inscrira dans la console "Server listen port 8080" et il lancera la
+//commande npm run start grâce à la fonction exec du module child_process
 app.listen(PORT, () => {
     console.log(`Server listen port ${PORT}`);
 
