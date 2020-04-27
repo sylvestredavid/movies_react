@@ -24,7 +24,7 @@ export const connectAction = (user) => {
                 return res;
             })
             .catch(error => {
-                dispatch(connectError(error));
+                dispatch(connectError(error.message));
             })
     }
 }

@@ -3,7 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="678a9482-8a26-482b-a8c2-1131ab33c489" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controller/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controller/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin/AdminElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/AdminElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ajouter-film/AjouterFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ajouter-film/AjouterFilm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/favoris/Favoris.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/favoris/Favoris.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-list/MoviesElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list/MoviesElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-list/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list/MoviesList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/connectAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/connectAction.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +128,8 @@
       <workItem from="1587737547975" duration="10345000" />
       <workItem from="1587761315699" duration="4407000" />
       <workItem from="1587765949272" duration="674000" />
-      <workItem from="1587805185904" duration="12677000" />
+      <workItem from="1587805185904" duration="13618000" />
+      <workItem from="1587968259953" duration="5263000" />
     </task>
     <task id="LOCAL-00001" summary="mise en page formulaire">
       <created>1587584724872</created>
@@ -200,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587900973599</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commentaires">
+      <created>1587908000702</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587908000702</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +249,7 @@
     <MESSAGE value="admin et refacto" />
     <MESSAGE value="commentaires de la partie serveur" />
     <MESSAGE value="commentaires et création de variables pour le type des actions" />
-    <option name="LAST_COMMIT_MESSAGE" value="commentaires et création de variables pour le type des actions" />
+    <MESSAGE value="commentaires" />
+    <option name="LAST_COMMIT_MESSAGE" value="commentaires" />
   </component>
 </project>

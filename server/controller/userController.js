@@ -32,10 +32,10 @@ export const sign_in = function(req, res) {
     }, function(err, user) {
       if (err) throw err;
       if (!user) {
-        res.status(401).json({ message: 'Authentication failed. User not found.' });
+        res.status(401).json({ message: 'Utilisateur inconnu' });
       } else if (user) {
         if (!user.comparePassword(req.body.password)) {
-          res.status(401).json({ message: 'Authentication failed. Wrong password.' });
+          res.status(401).json({ message: 'Mauvais mot de passe' });
         } else {
           return res.json({token: jwt.sign({ role: user.role, username: user.username, _id: user._id}, 'RESTFULAPIs')});
         }

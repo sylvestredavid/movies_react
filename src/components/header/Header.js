@@ -2,8 +2,10 @@ import React, {Component} from "react";
 import {Link, NavLink} from "react-router-dom";
 import {connect} from "react-redux";
 
+//création d'un composant à état, qui est une class héritant de React.Component
 class Header extends Component{
 
+    //méthode qui permet de diriger l'user vers l'admin si il est loggé, sinon vers le login
     routingAdmin = () => {
         if(this.props.user) {
             return "/admin";
@@ -11,6 +13,7 @@ class Header extends Component{
         return "/login";
     }
 
+    //methode obligatoire pour les composants à état, c'est là qu'on va retourner ce qu'on veux afficher: https://fr.reactjs.org/docs/react-component.html#render
     render() {
         return (
             <header className="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,6 +34,7 @@ class Header extends Component{
     }
 }
 
+//fonction qui envoie le state global de redux aux props du composant.
 const mapStateToProps = (state) => {
     console.log(state)
     return {
@@ -38,4 +42,6 @@ const mapStateToProps = (state) => {
     }
 }
 
+// exporte le composant en le connectant à redux, en premier parametre on met la fonction qui permet de passer le state global
+//aux props et en second, celle qui permet de passer les actions aux props
 export default connect(mapStateToProps)(Header)

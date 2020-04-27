@@ -10,8 +10,7 @@ class App extends Component {
 
     //methode qui va etre lancée quand le composant est injecté dans le DOM : https://fr.reactjs.org/docs/react-component.html#componentdidmount
     componentDidMount() {
-        const {fetchFilms} = this.props
-        fetchFilms();
+        this.props.fetchFilms();
     }
 
     //methode obligatoire pour les composants à état, c'est là qu'on va retourner ce qu'on veux afficher: https://fr.reactjs.org/docs/react-component.html#render
